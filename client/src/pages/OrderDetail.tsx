@@ -8,7 +8,6 @@ import { QRCodeSVG } from 'qrcode.react';
 import {
     HiOutlineArrowLeft,
     HiOutlineCheckCircle,
-    HiOutlineClock,
     HiOutlineUser,
     HiOutlineCalendar,
     HiOutlinePrinter,

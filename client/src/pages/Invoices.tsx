@@ -10,7 +10,6 @@ const Invoices = () => {
     const { currency } = useSettings();
     const [filterStatus, setFilterStatus] = useState('');
     const [viewInvoice, setViewInvoice] = useState<any>(null);
-    const [viewLoading, setViewLoading] = useState(false);
 
     const fetchInvoices = async () => {
         try {
@@ -38,14 +37,11 @@ const Invoices = () => {
     };
 
     const viewInvoiceDetail = async (id: string) => {
-        setViewLoading(true);
         try {
             const res = await api.get(`/invoices/${id}`);
             setViewInvoice(res.data.data);
         } catch {
             toast.error('Failed to load invoice');
-        } finally {
-            setViewLoading(false);
         }
     };
 

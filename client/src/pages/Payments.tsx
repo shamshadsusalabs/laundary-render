@@ -17,7 +17,6 @@ const Payments = () => {
     const [loading, setLoading] = useState(true);
     const [filterMethod, setFilterMethod] = useState('');
     const [showModal, setShowModal] = useState(false);
-    const [invoiceSearch, setInvoiceSearch] = useState('');
     const [invoices, setInvoices] = useState<any[]>([]);
     const [form, setForm] = useState({ invoice: '', paymentMethod: 'cash', amount: '', note: '' });
     const { currency } = useSettings();
