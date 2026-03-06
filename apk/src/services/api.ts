@@ -4,8 +4,8 @@ import { Platform } from 'react-native';
 
 // Android emulator uses 10.0.2.2, iOS simulator uses localhost
 const BASE_URL = Platform.OS === 'android'
-    ? 'http://10.173.77.86:5000/api'
-    : 'http://10.173.77.86:5000/api';
+    ? 'https://laundary-render.onrender.com/api'
+    : 'https://laundary-render.onrender.com/api';
 
 const api = axios.create({
     baseURL: BASE_URL,

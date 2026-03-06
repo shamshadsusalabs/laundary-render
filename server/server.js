@@ -16,7 +16,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:3000'],
+    origin: ['https://astonishing-kelpie-6dc847.netlify.app', 'https://astonishing-kelpie-6dc847.netlify.app'],
     credentials: true,
 }));
 app.use(express.json());
